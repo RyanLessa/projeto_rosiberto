@@ -1,5 +1,6 @@
 from fastapi import APIRouter, Depends, Query, status
 from sqlalchemy.orm import Session
+from typing import Optional
 
 from configs.get_db import get_db
 from schemas.usuarios import UsuarioCreate, UsuarioUpdate, UsuarioResponse
